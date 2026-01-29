@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEAL MANAGEMENT</title>
+    <link rel="stylesheet" href="meals.css">
+</head>
+<body>
+        <div class="container">
+      <h1>Meal Management</h1>
+      <p class="subtitle">Manage daily meal schedules for patients</p>
+    
+<div class="day-selector" id="daySelector">
+    <button class="day-btn active" data-day="Monday">Mon</button>
+    <button class="day-btn" data-day="Tuesday">Tue</button>
+    <button class="day-btn" data-day="Wednesday">Wed</button>
+    <button class="day-btn" data-day="Thursday">Thu</button>
+    <button class="day-btn" data-day="Friday">Fri</button>
+    <button class="day-btn" data-day="Saturday">Sat</button>
+    <button class="day-btn" data-day="Sunday">Sun</button>
+</div>
+
+<div class="schedule-title">
+    <h3 id="scheduleTitle">Monday's Meal Schedule</h3>
+    <p id="patientCount"></p>
+</div>
+
+
+<table>
+<thead>
+    <tr>
+        <th>Patient Name</th>
+        <th>Bed Number</th>
+        <th>☀️ Morning</th>
+        <th>🍽 Lunch</th>
+        <th>🌙 Dinner</th>
+    </tr>
+</thead>
+
+
+
+    <tbody id="mealTableBody"></tbody>
+</table>
+
+<div class="legend">
+    <strong>Diet Type Legend</strong><br>
+    <span class="tag normal">Normal</span> Regular diet
+    <span class="tag diabetic">Diabetic</span> Sugar-controlled diet
+    <span class="tag lowsalt">Low Salt</span> Sodium-restricted diet
+</div>
+
+    <script src="meals.js"></script>
+    </div>
+</body>
+</html>
