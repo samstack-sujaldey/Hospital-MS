@@ -1,0 +1,27 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "7be0ae77-716e-44e3-8252-da9f7b196c1c",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1770488600426"
+        }
+      },
+      "favorite": {
+        "name": "hospital-db-v2",
+        "color": "color9"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjoxLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}
