@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" style="background: #1e293b;">
+            <div class="sidebar-header" style="border-color: #334155;">
+                <div class="logo" style="color: white;">
+                    <i class="uil uil-shield-check"></i>
+                    <span>Super Admin</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-tab="doctors-manage" style="color: #cbd5e1;">
+                    <i class="uil uil-user-md"></i>
+                    <span>Manage Doctors</span>
+                </a>
+                <a href="#" class="nav-item" data-tab="patients-assign" style="color: #cbd5e1;">
+                    <i class="uil uil-users-alt"></i>
+                    <span>Assign Patients</span>
+                </a>
+                <a href="#" class="nav-item" data-tab="meals-manage" style="color: #cbd5e1;">
+                    <i class="uil uil-utensils"></i>
+                    <span>Update Meals</span>
+                </a>
+                <a href="#" id="logoutBtn" class="nav-item" style="color: #f87171; margin-top: auto;">
+                    <i class="uil uil-signout"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <h3>Admin Control Panel</h3>
+                <div class="user-profile">
+                    <div class="profile-info">
+                        <img src="https://ui-avatars.com/api/?name=Super+Admin&background=0F172A&color=fff" alt="Admin">
+                        <div>
+                            <h4>Super Admin</h4>
+                            <small>Administrator</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="content-area" class="content-area">
+                <!-- Dynamic Content -->
+            </div>
+        </main>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

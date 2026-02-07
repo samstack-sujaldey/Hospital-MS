@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="uil uil-stethoscope" style="color:var(--primary-color)"></i>
+                    <span>Doctor Portal</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-tab="my-patients">
+                    <i class="uil uil-users-alt"></i>
+                    <span>My Patients</span>
+                </a>
+                <a href="#" id="logoutBtn" class="nav-item" style="color: #ef4444; margin-top: auto;">
+                    <i class="uil uil-signout"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h3 id="welcomeMsg">Welcome, Doctor</h3>
+                <div class="user-profile">
+                    <div class="profile-info">
+                        <img src="" id="doctorImg" alt="Doctor">
+                        <div>
+                            <h4 id="doctorName">Loading...</h4>
+                            <small>Medical Professional</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="content-area" class="content-area">
+                <!-- Content -->
+            </div>
+        </main>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/doctor.js"></script>
+</body>
+
+</html>
