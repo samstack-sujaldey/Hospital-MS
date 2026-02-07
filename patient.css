@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+}
+
+/* HEADER */
+.dashboard-header {
+  padding: 20px 30px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+.dashboard-header p {
+  color: #6b7280;
+}
+
+/* MAIN */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 0 30px 30px;
+}
+
+/* LEFT */
+.left-section {
+  width: 300px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+/* PATIENT CARD */
+.patient-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #fff;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.patient-card.active {
+  background: #eef2ff;
+  border-left: 4px solid #2563eb;
+}
+
+.patient-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-name {
+  font-weight: 600;
+}
+
+.bed {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.fa-solid {
+  font-size: 22px;
+}
+
+/* RIGHT */
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-card,
+.medicine-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.medicine {
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}

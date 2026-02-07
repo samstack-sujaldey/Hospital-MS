@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="ananya.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- LEFT FORM -->
+        <div class="form-section" id="formSection">
+            <h2>Book an Appointment</h2>
+            <p class="subtitle">Schedule your visit with our expert doctors</p>
+
+            <label>Full Name *</label>
+            <input type="text" id="name">
+
+            <div class="row">
+                <div>
+                    <label>Age *</label>
+                    <input type="number" placeholder="">
+                </div>
+                <div>
+                    <label>Gender *</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <label>Contact Number *</label>
+            <input type="text" placeholder="+91">
+
+            <label>Select Doctor *</label>
+            <select id="doctor" onchange="doctorDropdownChange(this)">
+                <option value="">Select</option>
+                <option value="Dr. Sarah Johnson">Dr. Sarah Johnson</option>
+                <option value="Dr. Michael Chen">Dr. Michael Chen</option>
+                <option value="Dr. Emily Williams">Dr. Emily Williams</option>
+                <option value="Dr. James Anderson">Dr. James Anderson</option>
+            </select>
+
+            <label>Appointment Date *</label>
+            <input type="date" id="date">
+
+            <label>Time Slot *</label>
+            <div class="slots">
+                <button class="slot">09:00 AM</button>
+                <button class="slot">10:00 AM</button>
+                <button class="slot">02:00 PM</button>
+                <button class="slot">03:00 PM</button>
+                <button class="slot">04:00 PM</button>
+            </div>
+
+            <button class="book-btn" onclick="bookAppointment()">Book Appointment</button>
+        </div>
+
+
+
+        <!-- RIGHT DOCTORS -->
+        <div class="doctor-section">
+            <h3>Available Doctors</h3>
+
+            <div class="doctor-card" data-name="Dr. Sarah Johnson" onclick="selectDoctor(this, 'Dr. Sarah Johnson')">
+
+                <div class="avatar">
+                    <img src="images/sarah image.avif" alt="">
+                </div>
+                <div>
+                    <h4>Dr. Sarah Johnson</h4>
+                    <p>Cardiology</p>
+                    <span>6 slots available</span>
+                </div>
+            </div>
+
+            <div class="doctor-card" data-name="Dr. Michael Chen" onclick="selectDoctor(this, 'Dr. Michael Chen')">
+
+                <div class="avatar"></div>
+                <div>
+                    <h4>Dr. Michael Chen</h4>
+                    <p>Orthopedics</p>
+                    <span>5 slots available</span>
+                </div>
+            </div>
+
+            <div class="doctor-card" data-name="Dr. Emily Williams" onclick="selectDoctor(this, 'Dr. Emily Williams')">
+
+                <div class="avatar"></div>
+                <div>
+                    <h4>Dr. Emily Williams</h4>
+                    <p>Pediatrics</p>
+                    <span>5 slots available</span>
+                </div>
+            </div>
+
+            <div class="doctor-card" data-name="Dr. James Anderson" onclick="selectDoctor(this, 'Dr. James Anderson')">
+
+                <div class="avatar"></div>
+                <div>
+                    <h4>Dr. James Anderson</h4>
+                    <p>Neurology</p>
+                    <span>5 slots available</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CONFIRMATION -->
+    <div class="confirm-section" id="confirmSection">
+        <h2>✅ Appointment Confirmed!</h2>
+        <p>your appointment has been successfully booked</p>
+
+        <p><b>Patient:</b> <span id="cName"></span></p>
+        <p><b>Doctor:</b> <span id="cDoctor"></span></p>
+        <p><b>Date:</b> <span id="cDate"></span></p>
+        <p><b>Time:</b> <span id="cTime"></span></p>
+
+        <button class="btn" onclick="location.reload()">Book Another Appointment</button>
+    </div>
+
+    <script src="ananya.js"></script>
+</body>
+
+</html>
